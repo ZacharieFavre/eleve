@@ -33,14 +33,14 @@
             this.cmdDisplayGrp = new System.Windows.Forms.Button();
             this.cmdPrint = new System.Windows.Forms.Button();
             this.cmdCreate = new System.Windows.Forms.Button();
-            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.lstGroupe = new System.Windows.Forms.ListBox();
             this.grpGroupe.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpGroupe
             // 
-            this.grpGroupe.Controls.Add(this.txtDisplay);
+            this.grpGroupe.Controls.Add(this.lstGroupe);
             this.grpGroupe.Location = new System.Drawing.Point(12, 13);
             this.grpGroupe.Name = "grpGroupe";
             this.grpGroupe.Size = new System.Drawing.Size(284, 436);
@@ -88,13 +88,13 @@
             this.cmdCreate.Text = "Créer un élève";
             this.cmdCreate.UseVisualStyleBackColor = true;
             // 
-            // txtDisplay
+            // lstGroupe
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(7, 20);
-            this.txtDisplay.Multiline = true;
-            this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(258, 393);
-            this.txtDisplay.TabIndex = 0;
+            this.lstGroupe.FormattingEnabled = true;
+            this.lstGroupe.Location = new System.Drawing.Point(7, 20);
+            this.lstGroupe.Name = "lstGroupe";
+            this.lstGroupe.Size = new System.Drawing.Size(271, 407);
+            this.lstGroupe.TabIndex = 0;
             // 
             // Form1
             // 
@@ -107,7 +107,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpGroupe.ResumeLayout(false);
-            this.grpGroupe.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -120,7 +119,7 @@
         private System.Windows.Forms.Button cmdDisplayGrp;
         private System.Windows.Forms.Button cmdPrint;
         private System.Windows.Forms.Button cmdCreate;
-        private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.ListBox lstGroupe;
     }
 }
 

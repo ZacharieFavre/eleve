@@ -15,7 +15,7 @@ namespace Eleve
             string fileName = null;
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
-                openFileDialog1.InitialDirectory = "P:\\226a\\Eleve";
+                openFileDialog1.InitialDirectory = "C:\\";
                 openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
                 openFileDialog1.FilterIndex = 2;
                 openFileDialog1.RestoreDirectory = true;
@@ -31,7 +31,7 @@ namespace Eleve
             {
                 //Do something with the file, for example read text from it
                 string texte = File.ReadAllText(fileName);
-                return texte;
+                return fileName;
             }
             throw new Exception("Error");
         }

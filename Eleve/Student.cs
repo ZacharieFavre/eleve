@@ -14,11 +14,11 @@ namespace Eleve
         
         public Student(string name, Boolean isCapt, List<int> listOfChoices)
         {
-            this.name = name;
-            this.isCapt = isCapt;
-            this.listOfChoices = listOfChoices;
+             this.name = name;
+             this.isCapt = isCapt;
+             this.listOfChoices = listOfChoices;
         }
-
+        
         public string Name
         {
             get { return this.name; }
