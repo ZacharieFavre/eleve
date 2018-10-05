@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace Eleve
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmdDisplayGrp_Click(object sender, EventArgs e)
+        {
+            ImportFile importFile = new ImportFile();
+            string valeurCSV = importFile.ReadFile();
+
+            foreach (var line in File.ReadAllLines(valeurCSV))
+            {
+                var values = line.Split(';');
+            }
         }
     }
 }
